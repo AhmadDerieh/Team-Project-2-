@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5b478a;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(toto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1280px) {
+    body {
+        background: url(toto.jpg);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background: url(toto.jpg);
+    }
+}
+
+@media screen and (max-width: 1091px) {
+    body {
+        background: url(toto.jpg);
+    }
+}
+
+@media screen and (max-width:800px) {
+    body {
+        background: url(toto.jpg);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        background: url(toto.jpg);
+    }
+}
+
+.box {
+    width: 300px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    border-radius: 20px 45px;
+}
+
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #0367fd;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25px;
+}
+
+.box input[type="checkbox"] {
+    color: rgb(255, 0, 0);
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 270px;
+    border-color: #0004ffec;
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #0b4d52ec;
+    padding: 14px 35px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25px;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+    background: #23456bec;
+}
+
+label {
+    color: white;
+    list-style: none;
+}
+
+.show {
+    border-radius: 24px;
+    background: none;
+}
+
+.show :hover {
+    background-color: #12387098;
+}
+
+label:hover {
+    background: #37526eec;
+    border-radius: 24px;
+    border-color: rgb(33, 48, 43);
+}
+
+.forgot {
+    background-color: #37526eec;
+    font-style: italic;
+    border: 3px solid #0b4d52ec;
+    border-radius: 24px;
+}
+
+.forgot:hover {
+    background: #37526eec;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+    background-color: rgba(0, 0, 0, 0.534);
+}
+
+span {
+    color: red;
+}
+
+.logo {
+    color: rgb(252, 252, 249);
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav a {
+    margin: 0 15px;
+    transition: color .4s ease;
+}
+
+nav a:hover {
+    color: crimson;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+}
