@@ -1,0 +1,39 @@
+body{
+    background-image:url(https://www.pngmagic.com/product_images/website-background-image-size-psd-vector-photo.jpg)
+}
+.box{
+    width: 30%;
+    height:300px;  
+    float:left;
+    background-color: whitesmoke ;
+    margin:10px;
+    padding-left: 20px;
+    padding-right: 50px ;
+    margin-top: 50px;
+    margin-left: 500px;
+}
+.box i{
+    margin-top: 30px;
+    padding-left: 210px;
+}
+.box h2{
+    text-align: center;
+}
+.box hr{
+    width: 300px;
+    color: silver;
+}
+.box p{
+    text-align: center;
+}
+.box button{
+    background-color:#1134A6 ;
+    text-align: center;
+    width:375px;
+    height:50px;
+    font-size:15px;
+    border-radius:4px; 
+    margin-left: 40px;
+    color: white;
+    
+}
