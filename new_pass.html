@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new_pass.css">
+</head>
+
+<body style="background-image:url(https://www.pngmagic.com/product_images/website-background-image-size-psd-vector-photo.jpg)">
+    <div>
+        <div class="main1 ">
+            <h3> please enter your new password</h3>
+            <input type="text" id="pass1" name="pass">
+            <h3> Re-enter the new password</h3>
+            <input type="text" id="pass2" name="pass"><br><br>
+
+            <button id="myBtn" onclick="myFunction()">  Next  </button><br>
+            </a>
+            <div id="new"></div>
+        </div>
+    </div>
+</body>
+<script>
+    var input = document.getElementById("pass2");
+    input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("myBtn").click();
+        }
+    });
+
+    function myFunction() {
+        var input1 = document.getElementById("pass1").value;
+        var input2 = document.getElementById("pass2").value;
+        let i = 0;
+        let l = 0;
+        for (l = 0; input1[l]; l += 1);
+        for (i = 0; input2[i]; i += 1) {
+            if (input1[i] != input2[i]) {
+                break;
+            }
+        }
+        if (i != l) {
+            document.getElementById("new").innerHTML = ("not the same input password");
+        } else
+            document.getElementById("new").innerHTML = ("true");
+        location.href = "file:///C:/Users/iCloud%20Tech/Desktop/emailprohect1/welcom.html";
+        document.getElementById("new").style.color = 'white';
+        return input1, input2;
+    }
+</script>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: url(toto.jpg);
+        background-image: url(toto.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    h3 {
+        color: white;
+    }
+    
+    body.light {
+        --img-bg: url("bg-desktop-light.jpeg");
+        --clr-primary: hsl(243, 12%, 30%);
+        --clr-page-bg: hsl(0, 0%, 98%);
+        --clr-card-bg: hsl(0, 0%, 100%);
+        --clr-gb-1: hsl(240, 8%, 24%);
+        --clr-gb-2: hsl(243, 12%, 30%);
+        --clr-gb-3: hsl(252, 6%, 83%);
+        --clr-gb-4: hsl(237, 10%, 64%);
+        --clr-gb-5: hsl(252, 9%, 73%);
+        --clr-gb-6: hsl(252, 21%, 94%);
+    }
+    
+    .main1 {
+        width: 300px;
+        padding: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        border-radius: 20px 45px;
+    }
+    
+    a:link {
+        text-decoration: none;
+    }
+    
+    #myBtn {
+        border: 1px solid hsl(217, 16%, 45%);
+        padding: 5px 25px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #fff;
+        background: linear-gradient(to left, transparent 50%, #fff 50%);
+        background-size: 250% 100%;
+        background-position: right bottom;
+        transition: background-position .3s ease-out, color .3s ease-out;
+        text-transform: uppercase;
+    }
+    
+    #myBtn:hover {
+        background-position: left bottom;
+        color: hsl(214, 47%, 23%);
+    }
+</style>
+
+</html>

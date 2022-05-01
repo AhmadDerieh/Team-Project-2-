@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(toto.jpg);
+    background-image: url(toto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body.light {
+    --img-bg: url("bg-desktop-light.jpeg");
+    --clr-primary: hsl(243, 12%, 30%);
+    --clr-page-bg: hsl(0, 0%, 98%);
+    --clr-card-bg: hsl(0, 0%, 100%);
+    --clr-gb-1: hsl(240, 8%, 24%);
+    --clr-gb-2: hsl(243, 12%, 30%);
+    --clr-gb-3: hsl(252, 6%, 83%);
+    --clr-gb-4: hsl(237, 10%, 64%);
+    --clr-gb-5: hsl(252, 9%, 73%);
+    --clr-gb-6: hsl(252, 21%, 94%);
+}
+
+h3 {
+    color: white;
+}
+
+.box {
+    width: 300px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    border-radius: 20px 45px;
+}
+
+#btn2 {
+    border: 1px solid hsl(217, 16%, 45%);
+    padding: 5px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(to left, transparent 50%, #fff 50%);
+    background-size: 250% 100%;
+    background-position: right bottom;
+    transition: background-position .3s ease-out, color .3s ease-out;
+    text-transform: uppercase;
+}
+
+#btn2:hover {
+    background-position: left bottom;
+    color: hsl(214, 47%, 23%);
+}
+
+#myBtn {
+    border: 1px solid hsl(217, 16%, 45%);
+    padding: 5px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(to left, transparent 50%, #fff 50%);
+    background-size: 250% 100%;
+    background-position: right bottom;
+    transition: background-position .3s ease-out, color .3s ease-out;
+    text-transform: uppercase;
+}
+
+#myBtn:hover {
+    background-position: left bottom;
+    color: hsl(214, 47%, 23%);
+}
